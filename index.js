@@ -344,8 +344,7 @@ const create = (win, options) => {
 			if (typeof options.onClose === 'function') {
 				menu.on('menu-will-close', options.onClose);
 			}
-
-			menu.popup(win);
+			setTimeout(() => menu.popup(win), 50);
 		}
 	};
 
